@@ -7,7 +7,14 @@
     <title>Document</title>
 </head>
 <body>
+
+    <h1>
+        FizzBuzz
+    </h1>
+    <h5>Este ejercicio consiste en hacer un programa que vaya diciendo los numeros desde el 0 hasta el numero que elijas pero <br>
+        en los divisibles por 3 o por 5 cambie el numero por una palabra diferente en cada caso</h5>
     <script>
+
         let numeroMaximo;
 
         prompt("Escribe el numero maximo", numeroMaximo = 5);
@@ -15,7 +22,14 @@
         let i = 0;
         while (i < numeroMaximo)       
         {
-            document.write( i + "<br>");
+            if  ( i % 3 == 0 )
+            {
+                document.write("divisible por 3");
+            } else if ( i % 5 == 0 )  {
+                document.write("divisible por 5");
+            } else if {
+                document.write( i + "<br>" );           
+            }
             i++;
 
         }
