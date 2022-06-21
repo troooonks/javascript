@@ -15,26 +15,39 @@
         en los divisibles por 3 o por 5 cambie el numero por una palabra diferente en cada caso</h5>
     <script>
 
-        let numeroMaximo;
+        let numeroMaximo = 50;
 
-        prompt("Escribe el numero maximo", numeroMaximo = 5);
-
+        prompt("Escribe el numero maximo", numeroMaximo);
+        let numeroElegido = numeroMaximo;
+       
+    
         let i = 0;
-        while (i < numeroMaximo)       
-        {
-            if  ( i % 3 == 0 )
-            {
-                document.write("divisible por 3" + "<br>");
-            } else if ( i % 5 == 0 )  {
-                document.write("divisible por 5" + "<br>");
-            } else {
-                document.write( i + "<br>" );           
-            }
-            i++;
+        while (i <= numeroElegido)
+        if ( i % 3 == 0 && i % 5 == 0) {
 
-        }
+        document.write("Fizz3Buzz5" + "<br>");
+        i++;
 
+    } else if( i % 3 == 0  ) {
 
+        document.write("fizz3" + "<br>");
+        i++;
+
+    } else if (i == 1) {
+
+        document.write(1 + "<br>");
+        i++;
+    } else if ( i % 5 == 0 ) {
+
+        document.write("Buzz5" + "<br>");
+        i++;
+
+    } else {
+
+    document.write(i + "<br>");
+    i++;
+
+    }
         
 
     </script>
