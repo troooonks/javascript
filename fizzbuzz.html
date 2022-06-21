@@ -15,14 +15,11 @@
         en los divisibles por 3 o por 5 cambie el numero por una palabra diferente en cada caso</h5>
     <script>
 
-        let numeroMaximo = 50;
-
-        prompt("Escribe el numero maximo", numeroMaximo);
-        let numeroElegido = numeroMaximo;
-       
+        let numeroMaximo = parseInt(prompt("Escribe el numero maximo"));
+         
     
         let i = 0;
-        while (i <= numeroElegido)
+        while (i <= numeroMaximo)
         if ( i % 3 == 0 && i % 5 == 0) {
 
         document.write("Fizz3Buzz5" + "<br>");
@@ -33,10 +30,6 @@
         document.write("fizz3" + "<br>");
         i++;
 
-    } else if (i == 1) {
-
-        document.write(1 + "<br>");
-        i++;
     } else if ( i % 5 == 0 ) {
 
         document.write("Buzz5" + "<br>");
